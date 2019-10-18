@@ -1,6 +1,7 @@
 import React from 'react';
 // import logo from './logo.svg';
 import axios from 'axios'
+import AnimatedTitle from './AnimatedTitle'
 import './App.css';
 
 class App extends React.Component {
@@ -59,15 +60,21 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <h1>Sound less dumb.</h1>
-          <p>Enter a sentence.</p>
-        </header>
-        <form onSubmit={this.handleSubmit}>
-          <input maxLength="100" type="text" name="sentence" ref={this.sentence}/>
-        </form>
-        {this.state.newSentence && <p>{this.state.newSentence}</p>}
-        {this.state.isStupid ? <p>Use longer words stupid.</p> : <></>}
+        <div className="content">
+          <header className="App-header">
+            <AnimatedTitle></AnimatedTitle>
+          </header>
+          <div className="box">
+            <form onSubmit={this.handleSubmit}>
+              <p>Enter a sentence to make it sound more impressive.</p>
+              <input autocomplete="off" placeholder="Why am I so lonely..." maxLength="100" type="text" name="sentence" ref={this.sentence}/>
+            </form>
+          </div>
+          <div className="result">
+            {this.state.newSentence && (<div><h4>Why don't you try saying this instead:</h4><p>"{this.state.newSentence}"</p></div>)}
+            {this.state.isStupid ? <p>Use longer words stupid.</p> : <></>}
+          </div>
+        </div>
       </div>
     )
   }

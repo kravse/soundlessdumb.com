@@ -1,0 +1,69 @@
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.animated-title {
+  font-size: 60px;
+  margin: 0;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  max-width: 750px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.animated-title div {
+  width: 30%;
+  height: 80px;
+  position: relative;
+  text-align: center;
+}
+
+.animated-title div:first-of-type {
+  text-align: right;
+}
+
+.animated-title div:last-of-type {
+  text-align: left;
+}
+
+.animated-title div.less {
+  width: auto;
+  padding: 0 10px
+}
+
+.animated-title span {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.animated-title span.original {
+  animation: fadeInOut 4s infinite;
+  animation-fill-mode: both;
+  animation-direction: alternate-reverse;
+  -webkit-animation: fadeInOut 4s infinit;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-direction: alternate-reverse;
+}
+.animated-title span.less-dumb {
+  opacity: 0;
+  animation: fadeInOut 4s infinite;
+  animation-fill-mode: both;
+  animation-direction: alternate;
+  -webkit-animation: fadeInOut 4s infinit;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-direction: alternate;
+}
