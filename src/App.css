@@ -39,6 +39,7 @@ header {
 .box p {
   margin: 0 0 20px;
 }
+
 input {
   width: 80%;
   border-radius: 6px;
@@ -46,6 +47,13 @@ input {
   background: #eee;
   border: 1px solid #777;
   font-size: 24px;
+}
+
+input.spin {
+  background-image: url('./images/spinner.gif');
+  background-repeat: no-repeat;
+  background-size: 40px;
+  background-position: 98% center;
 }
 
 .result p {

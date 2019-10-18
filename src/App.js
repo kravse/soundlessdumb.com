@@ -8,7 +8,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isStupid: false
+      isStupid: false,
+      spinner: false
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     this.sentence = React.createRef();
@@ -18,7 +19,7 @@ class App extends React.Component {
     if (long.length === 0) return ''
     let newWords = original
     let limit = long.length < 6 ? long.length : 3
-
+    this.setState({spinner: true})
     for (let i = 0; i < limit; i++) {
       await axios.get('https://www.dictionaryapi.com/api/v3/references/thesaurus/json/' + long[i], {
         headers: {
@@ -36,7 +37,10 @@ class App extends React.Component {
         } catch (e) { console.log('weird words') }
       })
     }
-    this.setState({ newSentence: newWords.join(' ')})
+    this.setState({
+      newSentence: newWords.join(' '),
+      spinner: false
+    })
   }
 
   handleSubmit(event) {
@@ -67,7 +71,14 @@ class App extends React.Component {
           <div className="box">
             <form onSubmit={this.handleSubmit}>
               <p>Enter a sentence to make it sound more impressive.</p>
-              <input autocomplete="off" placeholder="Why am I so lonely..." maxLength="100" type="text" name="sentence" ref={this.sentence}/>
+              <input
+                autoComplete="off"
+                className={this.state.spinner ? 'spin' : ''}
+                placeholder="Why am I so lonely..."
+                maxLength="100"
+                type="text"
+                name="sentence"
+                ref={this.sentence}/>
             </form>
           </div>
           <div className="result">
