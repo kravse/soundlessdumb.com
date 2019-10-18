@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b97a02552bf4e77580b126c1d490095d",
+    "revision": "2345c6219ee84e77b3e286173f324a74",
     "url": "/sound-less-dumb/index.html"
   },
   {
