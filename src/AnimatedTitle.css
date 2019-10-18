@@ -67,3 +67,13 @@
   -webkit-animation-fill-mode: both;
   -webkit-animation-direction: alternate;
 }
+
+@media(max-width: 640px) {
+  .animated-title {
+    font-size: 26px;
+  }
+
+  .animated-title div {
+    height: 30px;
+  }
+}

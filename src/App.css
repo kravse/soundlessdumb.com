@@ -30,7 +30,7 @@ header {
 .box {
   background: #ff6262;
   width: 800px;
-  max-width: 95%;
+  max-width: 90%;
   margin: 0 auto 40px;
   padding: 65px 10px 70px;
   border-radius: 8px;
@@ -66,4 +66,20 @@ input.spin {
 .result h4 {
   font-size: 18px;
   margin-bottom: 10px;
+}
+
+@media(max-width: 640px) {
+  header {
+    padding: 20px 20px 25px;
+  }
+
+  .box {
+    padding: 20px 10px 30px;
+  }
+  input {
+    font-size: 18px;
+  }
+  .result p {
+    font-size: 30px;
+  }
 }
