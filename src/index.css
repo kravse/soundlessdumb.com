@@ -8,6 +8,7 @@ body {
   background-position: center bottom;
   background-repeat: no-repeat;
   position: relative;
+  background-attachment: fixed;
   color: #fff;
   box-sizing: border-box;
 }
