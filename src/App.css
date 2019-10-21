@@ -69,6 +69,19 @@ input.spin {
   margin-bottom: 10px;
 }
 
+.error {
+  background: #fff;
+  color: #ff3456;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 8px;
+  width: auto;
+  display: inline-block;
+  max-width: 600px;
+  width: 80%;
+}
+
 @media(max-width: 640px) {
   .App {
     padding: 20px 10px;
