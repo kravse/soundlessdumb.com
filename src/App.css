@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  padding: 60px 20px;
+  padding: 60px 60px;
   height: 100vh;
   min-height: 600px;
   position: relative;
@@ -82,9 +82,17 @@ input.spin {
   width: 80%;
 }
 
+.mw {
+  position: fixed;
+  z-index:2;
+  width: 50px;
+  bottom: 5px;
+  right: 5px;
+}
+
 @media(max-width: 640px) {
   .App {
-    padding: 20px 10px;
+    padding: 20px 50px;
   }
 
   header {
@@ -96,6 +104,7 @@ input.spin {
   }
   input {
     font-size: 18px;
+    width: 60%;
   }
   .result p {
     font-size: 30px;

@@ -93,6 +93,7 @@ class App extends React.Component {
             {this.state.isStupid ? <p>Use longer words stupid.</p> : <></>}
           </div>
         </div>
+        <img className="mw" src={require('./images/MWLogo_LightBG_120x120_2x.png')} alt="Merriam-Webster"></img>
       </div>
     )
   }
