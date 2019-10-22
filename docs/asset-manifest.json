@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.86cf2770.chunk.css",
-    "main.js": "/static/js/main.b4571138.chunk.js",
-    "main.js.map": "/static/js/main.b4571138.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.06d4958e.js",
-    "runtime-main.js.map": "/static/js/runtime-main.06d4958e.js.map",
-    "static/js/2.12e0707f.chunk.js": "/static/js/2.12e0707f.chunk.js",
-    "static/js/2.12e0707f.chunk.js.map": "/static/js/2.12e0707f.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.e3ac3e9e13c214e1de1c7b102ec68d67.js": "/precache-manifest.e3ac3e9e13c214e1de1c7b102ec68d67.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.86cf2770.chunk.css.map": "/static/css/main.86cf2770.chunk.css.map",
-    "static/media/MWLogo_LightBG_120x120_2x.png": "/static/media/MWLogo_LightBG_120x120_2x.765f6060.png",
-    "static/media/index.css": "/static/media/smart-books.35d91ed8.jpg",
-    "static/media/App.css": "/static/media/spinner.5fe0e55f.gif"
+    "main.css": "/sound-less-dumb/static/css/main.0ec1b173.chunk.css",
+    "main.js": "/sound-less-dumb/static/js/main.71717c30.chunk.js",
+    "main.js.map": "/sound-less-dumb/static/js/main.71717c30.chunk.js.map",
+    "runtime-main.js": "/sound-less-dumb/static/js/runtime-main.2760258b.js",
+    "runtime-main.js.map": "/sound-less-dumb/static/js/runtime-main.2760258b.js.map",
+    "static/js/2.12e0707f.chunk.js": "/sound-less-dumb/static/js/2.12e0707f.chunk.js",
+    "static/js/2.12e0707f.chunk.js.map": "/sound-less-dumb/static/js/2.12e0707f.chunk.js.map",
+    "index.html": "/sound-less-dumb/index.html",
+    "precache-manifest.40e152cf75bcd6ff14cb9a8900d79287.js": "/sound-less-dumb/precache-manifest.40e152cf75bcd6ff14cb9a8900d79287.js",
+    "service-worker.js": "/sound-less-dumb/service-worker.js",
+    "static/css/main.0ec1b173.chunk.css.map": "/sound-less-dumb/static/css/main.0ec1b173.chunk.css.map",
+    "static/media/MWLogo_LightBG_120x120_2x.png": "/sound-less-dumb/static/media/MWLogo_LightBG_120x120_2x.765f6060.png",
+    "static/media/index.css": "/sound-less-dumb/static/media/smart-books.35d91ed8.jpg",
+    "static/media/App.css": "/sound-less-dumb/static/media/spinner.5fe0e55f.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.06d4958e.js",
+    "static/js/runtime-main.2760258b.js",
     "static/js/2.12e0707f.chunk.js",
-    "static/css/main.86cf2770.chunk.css",
-    "static/js/main.b4571138.chunk.js"
+    "static/css/main.0ec1b173.chunk.css",
+    "static/js/main.71717c30.chunk.js"
   ]
 }
