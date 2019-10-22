@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/sound-less-dumb/static/css/main.e3d4eea7.chunk.css",
-    "main.js": "/sound-less-dumb/static/js/main.6229e8ef.chunk.js",
-    "main.js.map": "/sound-less-dumb/static/js/main.6229e8ef.chunk.js.map",
-    "runtime-main.js": "/sound-less-dumb/static/js/runtime-main.2760258b.js",
-    "runtime-main.js.map": "/sound-less-dumb/static/js/runtime-main.2760258b.js.map",
-    "static/js/2.12e0707f.chunk.js": "/sound-less-dumb/static/js/2.12e0707f.chunk.js",
-    "static/js/2.12e0707f.chunk.js.map": "/sound-less-dumb/static/js/2.12e0707f.chunk.js.map",
-    "index.html": "/sound-less-dumb/index.html",
-    "precache-manifest.8158077b34513ae1e1f5ee4af2ed1f10.js": "/sound-less-dumb/precache-manifest.8158077b34513ae1e1f5ee4af2ed1f10.js",
-    "service-worker.js": "/sound-less-dumb/service-worker.js",
-    "static/css/main.e3d4eea7.chunk.css.map": "/sound-less-dumb/static/css/main.e3d4eea7.chunk.css.map",
-    "static/media/index.css": "/sound-less-dumb/static/media/smart-books.35d91ed8.jpg",
-    "static/media/App.css": "/sound-less-dumb/static/media/spinner.5fe0e55f.gif"
+    "main.css": "/static/css/main.7d18729f.chunk.css",
+    "main.js": "/static/js/main.53ea66a5.chunk.js",
+    "main.js.map": "/static/js/main.53ea66a5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.06d4958e.js",
+    "runtime-main.js.map": "/static/js/runtime-main.06d4958e.js.map",
+    "static/js/2.12e0707f.chunk.js": "/static/js/2.12e0707f.chunk.js",
+    "static/js/2.12e0707f.chunk.js.map": "/static/js/2.12e0707f.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.149ae563d4c273e1ce3c1b42cca16766.js": "/precache-manifest.149ae563d4c273e1ce3c1b42cca16766.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.7d18729f.chunk.css.map": "/static/css/main.7d18729f.chunk.css.map",
+    "static/media/index.css": "/static/media/smart-books.35d91ed8.jpg",
+    "static/media/App.css": "/static/media/spinner.5fe0e55f.gif"
   },
   "entrypoints": [
-    "static/js/runtime-main.2760258b.js",
+    "static/js/runtime-main.06d4958e.js",
     "static/js/2.12e0707f.chunk.js",
-    "static/css/main.e3d4eea7.chunk.css",
-    "static/js/main.6229e8ef.chunk.js"
+    "static/css/main.7d18729f.chunk.css",
+    "static/js/main.53ea66a5.chunk.js"
   ]
 }
