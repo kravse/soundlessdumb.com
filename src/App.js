@@ -1,7 +1,7 @@
 import React from 'react';
-// import logo from './logo.svg';
-import axios from 'axios'
-import AnimatedTitle from './AnimatedTitle'
+import axios from 'axios';
+import thesaurus from './thesaurusData';
+import AnimatedTitle from './AnimatedTitle';
 import './App.css';
 
 class App extends React.Component {
@@ -16,32 +16,29 @@ class App extends React.Component {
     this.sentence = React.createRef();
   }
 
-  buildNewSentence = async (original, long) => {
-    if (long.length === 0) return ''
+  buildNewSentence = async (original, longWords) => {
+    if (longWords.length === 0) {
+      this.setState({isStupid: true})
+      return
+    }
     let newWords = original
-    let limit = long.length < 6 ? long.length : 3
+    let limit = longWords.length < 6 ? longWords.length : 3
     this.setState({
       spinner: true,
       error: ''
     })
     for (let i = 0; i < limit; i++) {
-      await axios.get('https://www.dictionaryapi.com/api/v3/references/thesaurus/json/' + long[i], {
-        headers: {
-          Accept: "application/json"
-        },
-        params: {
-          key: 'fca6f403-e9b1-442c-82b0-f861e7b7a3d2'
+      let index = newWords.indexOf(longWords[i]);
+      let newWord = thesaurus[longWords[i]];
+      
+      if (newWord) {
+        newWords[index] = newWord;
+      } else if (longWords[i].endsWith('s')) {
+        newWord = thesaurus[longWords[i].slice(0, -1)];
+        if (newWord) {
+          newWords[index] = newWord + 's';
         }
-      }).then((response) => {
-        try {
-          if (response.data && response.data.length > 0) {
-            let index = newWords.indexOf(long[i])
-            newWords[index] = response.data[0].meta.syns[0].sort(function (a, b) { return b.length - a.length; })[0]
-          }
-        } catch (e) { console.log('weird words') }
-      }).catch((error) => {
-        this.setState({error: '☢ Hahaha looks like we might have been rate limited by Merriam Webster... Come back tomorrow!'});
-      })
+      }
     }
     this.setState({
       newSentence: newWords.join(' '),
@@ -54,17 +51,12 @@ class App extends React.Component {
     this.setState({newSentence: ''})
     if (this.state.isStupid) {
       this.setState({isStupid: false})
-      return
     }
     let sentence = this.sentence.current.value.split(" ")
     let longWords = sentence.filter(val => {
       return val.length > 3
     })
-    if (longWords.length === 0) {
-      this.setState({isStupid: true})
-    } else {
-      this.buildNewSentence(sentence, longWords)
-    }
+    this.buildNewSentence(sentence, longWords)
   }
 
   render() {

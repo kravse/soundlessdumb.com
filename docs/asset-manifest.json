@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/sound-less-dumb/static/css/main.0ec1b173.chunk.css",
-    "main.js": "/sound-less-dumb/static/js/main.71717c30.chunk.js",
-    "main.js.map": "/sound-less-dumb/static/js/main.71717c30.chunk.js.map",
+    "main.js": "/sound-less-dumb/static/js/main.74b990ae.chunk.js",
+    "main.js.map": "/sound-less-dumb/static/js/main.74b990ae.chunk.js.map",
     "runtime-main.js": "/sound-less-dumb/static/js/runtime-main.2760258b.js",
     "runtime-main.js.map": "/sound-less-dumb/static/js/runtime-main.2760258b.js.map",
-    "static/js/2.12e0707f.chunk.js": "/sound-less-dumb/static/js/2.12e0707f.chunk.js",
-    "static/js/2.12e0707f.chunk.js.map": "/sound-less-dumb/static/js/2.12e0707f.chunk.js.map",
+    "static/js/2.95c9083d.chunk.js": "/sound-less-dumb/static/js/2.95c9083d.chunk.js",
+    "static/js/2.95c9083d.chunk.js.map": "/sound-less-dumb/static/js/2.95c9083d.chunk.js.map",
     "index.html": "/sound-less-dumb/index.html",
-    "precache-manifest.40e152cf75bcd6ff14cb9a8900d79287.js": "/sound-less-dumb/precache-manifest.40e152cf75bcd6ff14cb9a8900d79287.js",
+    "precache-manifest.7232e6d2abbe05b8d2b8c4173100e828.js": "/sound-less-dumb/precache-manifest.7232e6d2abbe05b8d2b8c4173100e828.js",
     "service-worker.js": "/sound-less-dumb/service-worker.js",
     "static/css/main.0ec1b173.chunk.css.map": "/sound-less-dumb/static/css/main.0ec1b173.chunk.css.map",
     "static/media/MWLogo_LightBG_120x120_2x.png": "/sound-less-dumb/static/media/MWLogo_LightBG_120x120_2x.765f6060.png",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.2760258b.js",
-    "static/js/2.12e0707f.chunk.js",
+    "static/js/2.95c9083d.chunk.js",
     "static/css/main.0ec1b173.chunk.css",
-    "static/js/main.71717c30.chunk.js"
+    "static/js/main.74b990ae.chunk.js"
   ]
 }
