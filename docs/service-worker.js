@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sound-less-dumb/precache-manifest.7232e6d2abbe05b8d2b8c4173100e828.js"
+  "/sound-less-dumb/precache-manifest.b167ea9e693a21c812870ff88a0f1594.js"
 );
 
 self.addEventListener('message', (event) => {

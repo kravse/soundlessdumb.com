@@ -1,17 +1,16 @@
 {
   "files": {
     "main.css": "/sound-less-dumb/static/css/main.0ec1b173.chunk.css",
-    "main.js": "/sound-less-dumb/static/js/main.74b990ae.chunk.js",
-    "main.js.map": "/sound-less-dumb/static/js/main.74b990ae.chunk.js.map",
+    "main.js": "/sound-less-dumb/static/js/main.540ba89d.chunk.js",
+    "main.js.map": "/sound-less-dumb/static/js/main.540ba89d.chunk.js.map",
     "runtime-main.js": "/sound-less-dumb/static/js/runtime-main.2760258b.js",
     "runtime-main.js.map": "/sound-less-dumb/static/js/runtime-main.2760258b.js.map",
     "static/js/2.95c9083d.chunk.js": "/sound-less-dumb/static/js/2.95c9083d.chunk.js",
     "static/js/2.95c9083d.chunk.js.map": "/sound-less-dumb/static/js/2.95c9083d.chunk.js.map",
     "index.html": "/sound-less-dumb/index.html",
-    "precache-manifest.7232e6d2abbe05b8d2b8c4173100e828.js": "/sound-less-dumb/precache-manifest.7232e6d2abbe05b8d2b8c4173100e828.js",
+    "precache-manifest.b167ea9e693a21c812870ff88a0f1594.js": "/sound-less-dumb/precache-manifest.b167ea9e693a21c812870ff88a0f1594.js",
     "service-worker.js": "/sound-less-dumb/service-worker.js",
     "static/css/main.0ec1b173.chunk.css.map": "/sound-less-dumb/static/css/main.0ec1b173.chunk.css.map",
-    "static/media/MWLogo_LightBG_120x120_2x.png": "/sound-less-dumb/static/media/MWLogo_LightBG_120x120_2x.765f6060.png",
     "static/media/index.css": "/sound-less-dumb/static/media/smart-books.35d91ed8.jpg",
     "static/media/App.css": "/sound-less-dumb/static/media/spinner.5fe0e55f.gif"
   },
@@ -19,6 +18,6 @@
     "static/js/runtime-main.2760258b.js",
     "static/js/2.95c9083d.chunk.js",
     "static/css/main.0ec1b173.chunk.css",
-    "static/js/main.74b990ae.chunk.js"
+    "static/js/main.540ba89d.chunk.js"
   ]
 }
