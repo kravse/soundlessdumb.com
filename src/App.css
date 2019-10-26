@@ -90,6 +90,11 @@ input.spin {
   right: 5px;
 }
 
+.result-sentence:first-letter {
+  text-transform: capitalize;
+  display: block;
+}
+
 @media(max-width: 640px) {
   .App {
     padding: 20px 50px;

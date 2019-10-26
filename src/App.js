@@ -1,6 +1,6 @@
 import React from 'react';
-import thesaurus from './thesaurusData';
 import AnimatedTitle from './AnimatedTitle';
+import pronouns from './pronouns';
 import './App.css';
 
 class App extends React.Component {
@@ -15,10 +15,17 @@ class App extends React.Component {
     this.sentence = React.createRef();
   }
 
+  thesaurus = (word) => {
+    let letter = word.charAt(0);
+    return import('./data/' + letter).then(module => {
+      return module.default()[word];
+    });
+  }
+
   buildNewSentence = async (original, longWords) => {
     if (longWords.length === 0) {
-      this.setState({isStupid: true})
-      return
+      this.setState({isStupid: true});
+      return;
     }
     let newWords = original
     let limit = longWords.length < 6 ? longWords.length : 3
@@ -28,12 +35,12 @@ class App extends React.Component {
     })
     for (let i = 0; i < limit; i++) {
       let index = newWords.indexOf(longWords[i]);
-      let newWord = thesaurus[longWords[i]];
-      
+      let newWord = await this.thesaurus(longWords[i]);
+
       if (newWord) {
         newWords[index] = newWord;
       } else if (longWords[i].endsWith('s')) {
-        newWord = thesaurus[longWords[i].slice(0, -1)];
+        newWord = await this.thesaurus(longWords[i].slice(0, -1));
         if (newWord) {
           newWords[index] = newWord + 's';
         }
@@ -53,7 +60,7 @@ class App extends React.Component {
     }
     let sentence = this.sentence.current.value.split(" ")
     let longWords = sentence.filter(val => {
-      return val.length > 3
+      return val.length > 3 && pronouns.indexOf(val) === -1
     })
     this.buildNewSentence(sentence, longWords)
   }
@@ -80,11 +87,10 @@ class App extends React.Component {
             </form>
           </div>
           <div className="result">
-            {this.state.newSentence && (<div><h4>Why don't you try saying this instead:</h4><p>"{this.state.newSentence}"</p></div>)}
-            {this.state.isStupid ? <p>Use longer words stupid.</p> : <></>}
+            {this.state.newSentence && (<div><h4>Why don't you try saying this instead:</h4><p className="result-sentence">{this.state.newSentence}.</p></div>)}
+            {this.state.isStupid ? <p>This sentence is so beyond helping</p> : <></>}
           </div>
         </div>
-        {/* <img className="mw" src={require('./images/MWLogo_LightBG_120x120_2x.png')} alt="Merriam-Webster"></img> */}
       </div>
     )
   }
