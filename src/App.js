@@ -91,6 +91,9 @@ class App extends React.Component {
             {this.state.isStupid ? <p>This sentence is so beyond helping</p> : <></>}
           </div>
         </div>
+        <div class="contact">
+          <p>A project by <a href="https://twitter.com/kravse">@kravse</a></p>
+        </div>
       </div>
     )
   }

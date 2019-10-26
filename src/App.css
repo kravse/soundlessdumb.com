@@ -95,6 +95,31 @@ input.spin {
   display: block;
 }
 
+.contact {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  z-index: 1;
+}
+
+.contact p {
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.contact a {
+  color: #ff6262;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
 @media(max-width: 640px) {
   .App {
     padding: 20px 50px;
