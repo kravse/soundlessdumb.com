@@ -58,7 +58,7 @@ class App extends React.Component {
     if (this.state.isStupid) {
       this.setState({isStupid: false})
     }
-    let sentence = this.sentence.current.value.split(" ")
+    let sentence = this.sentence.current.value.toLowerCase().split(" ")
     let longWords = sentence.filter(val => {
       return val.length > 3 && pronouns.indexOf(val) === -1
     })

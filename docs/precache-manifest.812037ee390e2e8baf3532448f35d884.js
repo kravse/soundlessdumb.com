@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "60c34a76c14d5c31afa8c74700746729",
+    "revision": "2d66c949b9212142e7872ac7d92ca428",
     "url": "/sound-less-dumb/index.html"
   },
   {
-    "revision": "84dc585d7339d9b1ce9b",
+    "revision": "944bd07e5d74891e92d8",
     "url": "/sound-less-dumb/static/css/main.177085ac.chunk.css"
   },
   {
@@ -116,8 +116,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sound-less-dumb/static/js/9.b3967f70.chunk.js"
   },
   {
-    "revision": "84dc585d7339d9b1ce9b",
-    "url": "/sound-less-dumb/static/js/main.c4943e55.chunk.js"
+    "revision": "944bd07e5d74891e92d8",
+    "url": "/sound-less-dumb/static/js/main.59dbdaba.chunk.js"
   },
   {
     "revision": "20aa8c7deddadf9e79e0",
