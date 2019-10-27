@@ -68,7 +68,7 @@
   -webkit-animation-direction: alternate;
 }
 
-@media(max-width: 640px) {
+@media(max-width: 900px) {
   .animated-title {
     font-size: 26px;
   }
