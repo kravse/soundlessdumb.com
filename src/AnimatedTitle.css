@@ -70,7 +70,13 @@
 
 @media(max-width: 900px) {
   .animated-title {
-    font-size: 26px;
+    font-size: 35px;
+  }
+}
+
+@media(max-width: 640px) {
+  .animated-title {
+    font-size: 24px;
   }
 
   .animated-title div {

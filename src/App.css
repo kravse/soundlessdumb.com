@@ -122,7 +122,7 @@ input.spin {
 
 @media(max-width: 640px) {
   .App {
-    padding: 20px 50px;
+    padding: 20px 20px;
   }
 
   header {
@@ -134,7 +134,7 @@ input.spin {
   }
   input {
     font-size: 18px;
-    width: 60%;
+    width: 75%;
   }
   .result p {
     font-size: 30px;
