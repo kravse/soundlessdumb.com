@@ -8,4 +8,4 @@ This is a nonsensical experiment I used to explore React, Python and the Merriam
 
 The results are still ridiculous, but hey... it's more about the process than the result right? ...right?
 
-![Screenshot](/src/imgs/screenshot.jpg)
+![Screenshot](/src/images/screenshot.jpg)
